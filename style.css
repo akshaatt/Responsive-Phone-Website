@@ -82,7 +82,7 @@ nav{
     width: 50px;
 }
 .menu li a:hover,
-.active
+.menu li a.active
 {
     background-color: #292929;
     color: #fff !important;
@@ -141,6 +141,8 @@ span{
     font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
     outline: none;
     letter-spacing: 2px;
+    word-spacing: 2px;
+    padding: 2px;
     /* box-shadow: 2px 2px 12px rgba(0, 0, 0, 0.5); */
 }
 .btn:hover{
@@ -565,5 +567,60 @@ button:hover{
 @media(max-width:1173px){
     .s-b-container{
         grid-template-columns: 1fr 1fr;
+    }
+}
+.toggle{
+    display: none;
+}
+@media(max-width:1000px){
+    .toggle{
+        display: block;
+    }
+    .toggle:before{
+            content: '\f0c9';
+            font-family: fontAwesome;
+            line-height: 0px;
+            margin-left: -45px;
+    }
+    .toggle.active:before{
+        content: '\f00d';
+
+    }
+    nav{
+        padding: 10px 30px;
+    }
+    nav ul{
+        position: absolute;
+        width: 100%;
+        height: auto;
+        box-sizing: border-box;
+        background-color: #0f0f0f;
+        top:50px;
+        left: 0;
+        transition: 0.5s;
+        overflow: hidden;
+        border: 3px solid #1f1f1f;
+        display: none !important;
+        margin: 0;
+        padding: 0;
+    }
+    nav ul li a{
+        border-bottom: 1px solid rgba(255, 255, 255, 0.1);
+        width: 100%;
+        height: 50px;
+        display: flex;
+        justify-content: center;
+        align-items: center;
+        margin: 0px !important;
+        padding: 0px !important;
+    }
+    .active-menu{
+        display: block !important;
+        transition: all ease 0.5s;
+    }
+}
+@media(max-width:998px){
+    .pre-image{
+        display: none;
     }
 }

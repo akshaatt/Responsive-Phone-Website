@@ -13,7 +13,7 @@
 <section id="main">
     <nav>
         <a href="#" class="logo"><img src="png.png" class="imgs">REALME 8</a>
-    
+    <div class="toggle"></div>
     <ul class="menu">
         <li><a href="#" class="active">Home</a></li>
         <li><a href="#about">About</a></li>
@@ -29,7 +29,7 @@
     <div class="name1"><p>Realme 8</p>
     <h1>Dare <span>To</span> Leap!</h1>
     <p class="details">Bringing You The Latest <span>Realme 8 Pro</span> For The First Time. Checkout Latest Features With Humoungous Battery Life</p>
-    <a href="#" class="btn">Check at AMAZON</a>
+    <a href="https://www.amazon.in/Realme-Narzo-White-Knight-Storage/dp/B08JZ8G8BW/ref=sr_1_1?dchild=1&keywords=realme+8+pro&qid=1602565203&s=electronics&sr=1-1" target="_blank" class="btn"> <i class="fa fa-amazon"></i> View at Amazon</a>
 </div>
 
 
@@ -159,5 +159,15 @@
 </div>
 
 </section>
+<script type="text/javascript" src="js/Jquery.js"></script>
+
+<script type="text/javascript">
+$(document).ready(function(){
+    $('.toggle').click(function(){
+        $('.toggle').toggleClass('active')
+        $('nav ul').toggleClass('active-menu')
+    })
+}) 
+</script>
 </body>
 </html>

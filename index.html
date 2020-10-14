@@ -3,10 +3,17 @@
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <link rel="stylesheet" href="style.css">
+    
     <link rel="icon" href="png.png" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/051a3a9955.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="lightslider.css">
+    <script type="text/javascript" src="js/Jquery.js"></script>
+    <!-- <script type="text/javascript" src="script.js"></script> -->
+    <script type="text/javascript" src="js/lightslider.js"></script>
+    <script src="js/script.js"></script>
+
     <title>Realme 8</title>
 </head>
 <body>
@@ -19,6 +26,7 @@
         <li><a href="#about">About</a></li>
         <li><a href="#features">Features</a></li>
         <li><a href="#preorder">Pre-Order</a></li>
+        <li><a href="#models">Models</a></li>
         <li><a href="#writeus">Write Us</a></li>
     </ul>
 
@@ -91,6 +99,7 @@
     </div>
 </div>
 </section>
+
 <section id="preorder">
     <div class="pre-title">Book <span> Realme 8 Pro  </span>Now...</div>
     <div class="preorder">
@@ -114,6 +123,59 @@
    </form>
 </div>
 </div>
+</section>
+<section id="models">
+ 
+            <div class="boxx">
+                <div class="slide-img">
+            <img src="phone1.jpg" alt="error">
+            <div class="overlay">
+                <a href="#" class="buy-btn">Check More</a>
+            </div>
+                </div>
+                <div class="detail-box">
+            <div class="type">
+               <a href="#" class="type0">CHICK GOLDEN</a>
+               <span>REALME 8 PRO</span>
+            </div>
+            <a href="#models" class="price">$490</a>
+                </div>
+            </div>
+        
+            <div class="boxx" id="bokx">
+                <div class="slide-img">
+            <img src="phone5.png" alt="error">
+            <div class="overlay">
+                <a href="#" class="buy-btn">Check More</a>
+            </div>
+                </div>
+                <div class="detail-box">
+            <div class="type">
+               <a href="#" class="type0">DIMMISH BLUE</a>
+               <span>REALME 8 PRO</span>
+            </div>
+            <a href="#models" class="price">$430</a>
+                </div>
+            </div>
+        
+            <div class="boxx">
+                <div class="slide-img">
+            <img src="phone3.png" alt="error">
+            <div class="overlay">
+                <a href="#" class="buy-btn">Check More</a>
+            </div>
+                </div>
+                <div class="detail-box">
+            <div class="type" >
+               <a href="#" class="type0">MATT BLACK</a>
+               <span>REALME 8 PRO</span>
+            </div>
+            <a href="#models" class="price">$470</a>
+                </div>
+            </div>
+        
+
+
 </section>
 <section id="writeus">
 <form>
@@ -159,6 +221,7 @@
 </div>
 
 </section>
+
 <script type="text/javascript" src="js/Jquery.js"></script>
 
 <script type="text/javascript">
@@ -168,6 +231,16 @@ $(document).ready(function(){
         $('nav ul').toggleClass('active-menu')
     })
 }) 
+$(document).ready(function() {
+    $('#autoWidth').lightSlider({
+        autoWidth:true,
+        loop:true,
+        onSliderLoad: function() {
+            $('#autoWidth').removeClass('cS-hidden');
+        } 
+    });  
+  });
+
 </script>
 </body>
 </html>

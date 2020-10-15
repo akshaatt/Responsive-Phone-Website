@@ -316,13 +316,14 @@ button:hover{
 #preorder{
     width: 80%;
     height: 100vh;
-    /* display: flex; */
-    /* align-items: center; */
-    /* justify-content: space-between; */
+    display: flex; 
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
     padding:50px 5% 0px 5% ;
 }
 .pre-title{
-    /* display: block; */
+    display: block;
     color: #fff;
     font-size: 4rem;
     /* text-align: center; */
@@ -398,6 +399,12 @@ button:hover{
     align-items: center;
     justify-content: space-evenly;
     background-color: #ffffff;
+}
+.boxmain{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    justify-items: center;
+    grid-gap: 100px;
 }
 a{
     text-decoration: none;
@@ -628,6 +635,10 @@ a{
     text-transform: uppercase;
     letter-spacing: 2px;
 }
+.boxx:hover{
+transform: translateY(-30px);
+transition: all ease 0.5s;
+}
 #footer{
     width: 100%;
     height: 30vh;
@@ -747,5 +758,29 @@ a{
 @media(max-width:998px){
     .pre-image{
         display: none;
+    }
+}
+@media(max-width:1281px){
+    .boxmain{
+        grid-gap: 20px;
+    }
+}
+@media(max-width:1114px){
+    .boxmain{
+        grid-template-columns: 1fr 1fr;
+    }
+}
+@media(max-width:998px){
+    #writeus form{
+        width: 90%;
+    }
+}
+@media(max-width:1231px){
+    #about{
+        flex-direction: column-reverse;
+        justify-content: center;
+    }
+    .about-text{
+        width: 80%;
     }
 }

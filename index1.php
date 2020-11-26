@@ -1,13 +1,16 @@
+<?php
+include("conn.php");
+?>
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    
+
     <link rel="icon" href="png.png" type="image/x-icon"/>
     <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300&display=swap" rel="stylesheet">
     <script src="https://kit.fontawesome.com/051a3a9955.js" crossorigin="anonymous"></script>
-    <!-- <link rel="stylesheet" href="style.css"> -->
+    <link rel="stylesheet" href="style.css">
     <link rel="stylesheet" href="lightslider.css">
     <script type="text/javascript" src="js/Jquery.js"></script>
     <!-- <script type="text/javascript" src="script.js"></script> -->
@@ -16,7 +19,7 @@
 
     <title>Realme 8</title>
 </head>
-<style>
+    <style>
     body{
     margin: 0;
     padding: 0;
@@ -802,8 +805,7 @@ transition: all ease 0.5s;
     .about-text{
         width: 80%;
     }
-}
-</style>
+}</style>
 <body>
 <section id="main">
     <nav>
@@ -861,7 +863,7 @@ transition: all ease 0.5s;
     <div class="s-box">
         <div class="s-b-img">
             <div class="s-type">64+8+5+5 MP Cameras</div>
-            <img src="camera.jpg" class="camera"> 
+            <img src="camera.jpg" class="camera">
         </div>
         <div class="s-b-text">
             <a href="#">The Realme 8 Pro is the best Realme phone in the market that offers great features for gaming, viewing, or even daily smartphone tasks. The 6.4-inch Super AMOLED display and the 64MP quad-camera setup, combined with the Snapdragon 720G octa-core processor make it one of the best choices in the market.</a>
@@ -870,7 +872,7 @@ transition: all ease 0.5s;
     <div class="s-box">
         <div class="s-b-img">
             <div class="s-type">Battery Lyf</div>
-            <img src="battery.jpg" class="battery"> 
+            <img src="battery.jpg" class="battery">
         </div>
         <div class="s-b-text">
             <a href="#">Its 4300mAh battery that lasts for an entire day on medium usage. Coming to the battery, Realme phones have never disappointed me and the 8 is no different. It has a 4300mAh battery that lasts for an entire day on medium usage.
@@ -880,7 +882,7 @@ transition: all ease 0.5s;
     <div class="s-box">
         <div class="s-b-img">
             <div class="s-type">Storage</div>
-            <img src="card.jpg" class="sd"> 
+            <img src="card.jpg" class="sd">
         </div>
         <div class="s-b-text">
             <a href="#">Best Realme Phones with expandable storage- Realme always impresses with its design, performance, and storage.  Realme phones are good in camera, excellent in performance, and has powerful battery capacity. It becomes quite confusing when you have to chose best Realme phone with expandable storage. </a>
@@ -896,7 +898,7 @@ transition: all ease 0.5s;
     <img src="preorder.png">
 </div>
 <div class="entries">
-   <form action="backend.php" method="POST">
+   <form>
        <div class="foram">
 <i class="fa fa-user"></i><input type="text" placeholder=" Name" required name="Name">
 </div>
@@ -907,7 +909,7 @@ transition: all ease 0.5s;
 <i class="fa fa-envelope-o"></i><input type="email" placeholder="Email Address" required name="email">
 </div>
 <div class="butn0">
-    <input type="submit" value="book now" class="butn">
+    <input type="submit" value="book now" class="butn" name="submit">
 </div>
    </form>
 </div>
@@ -930,7 +932,7 @@ transition: all ease 0.5s;
             <a href="https://www.amazon.in/Redmi-Note-Pro-Champagne-Storage/dp/B08696XB45/ref=asc_df_B08696XB45/?tag=googleshopdes-21&linkCode=df0&hvadid=397008109417&hvpos=&hvnetw=g&hvrand=3287567782582223046&hvpone=&hvptwo=&hvqmt=&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9040183&hvtargid=pla-957707983178&psc=1&ext_vrnc=hi" class="price">$490</a>
                 </div>
             </div>
-        
+
             <div class="boxx" id="bokx">
                 <div class="slide-img">
             <img src="phone5.png" alt="error">
@@ -947,7 +949,7 @@ transition: all ease 0.5s;
             <a href="https://www.flipkart.com/vivo-x50-pro-alpha-grey-256-gb/p/itmdf8a4496a52e7?gclid=CjwKCAjww5r8BRB6EiwArcckC-HCeTsYEbXQGk5jvvCmuE0E3R-BWfleq1jR5MCUTYqFMFHZtx_RwRoCNrcQAvD_BwE&pid=MOBFTGKRGHTZZPPQ&lid=LSTMOBFTGKRGHTZZPPQIJZBVY&marketplace=FLIPKART&cmpid=content_mobile_234989660_g_8965229628_gmc_pla&tgi=sem,1,G,11214002,g,search,,146618361543,,,,c,,,,,,,&ef_id=CjwKCAjww5r8BRB6EiwArcckC-HCeTsYEbXQGk5jvvCmuE0E3R-BWfleq1jR5MCUTYqFMFHZtx_RwRoCNrcQAvD_BwE:G:s&s_kwcid=AL!739!3!146618361543!!!g!307944879278!" class="price">$430</a>
                 </div>
             </div>
-        
+
             <div class="boxx">
                 <div class="slide-img">
             <img src="phone3.png" alt="error">
@@ -963,7 +965,7 @@ transition: all ease 0.5s;
             <a href="https://www.amazon.in/Dazzling-Storage-Additional-Exchange-Offers/dp/B07SDPJ4XJ/ref=sr_1_4?dchild=1&keywords=mobile&qid=1602666373&sr=8-4" class="price">$470</a>
                 </div>
             </div>
-        
+
 
         </div>
 </section>
@@ -980,13 +982,13 @@ transition: all ease 0.5s;
         <input type="email" placeholder="Email Address" required>
     </div>
 </div>
-       
+
 </div>
     <div class="contact-right">
         <div class="message">
             <font>Message</font>
             <textarea name="message" rows="5" cols="20" placeholder="Write Here..."></textarea>
-            
+
         </div>
         <button>Submit</button>
     </div>
@@ -1020,17 +1022,33 @@ $(document).ready(function(){
         $('.toggle').toggleClass('active')
         $('nav ul').toggleClass('active-menu')
     })
-}) 
+})
 $(document).ready(function() {
     $('#autoWidth').lightSlider({
         autoWidth:true,
         loop:true,
         onSliderLoad: function() {
             $('#autoWidth').removeClass('cS-hidden');
-        } 
-    });  
+        }
+    });
   });
 
 </script>
 </body>
 </html>
+<?php
+$enterna = $_GET['Name'];
+$enterph = $_GET['phone'];
+$enterem = $_GET['email'];
+
+$query= "insert into firsttable values('$enterna' , '$enterph' , '$enterem')";
+$data= mysqli_query($con,$query);
+
+if($data)
+{
+    echo "done";
+}
+else{
+    echo "failed";
+}
+?>
